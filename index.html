@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGeoGrid Property Developers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="iGeoGrid Logo"> <!-- Replace with your actual logo file path -->
+    <span>iGeoGrid Property Developers</span>
+</header>
+
+<div class="container">
+    <h2>Available Plots</h2>
+    <div id="plots">
+        <div class="plot">
+            <img src="https://via.placeholder.com/300" alt="Land Image">
+            <h3>Chennai</h3>
+            <p>Price: ₹50 Lakhs</p>
+            <p>Size: 2 Acres</p>
+            <p>Description: Prime residential land</p>
+            <button class="remove-btn" onclick="removePlot(this)">Remove</button>
+        </div>
+    </div>
+
+    <!-- Admin Section -->
+    <div class="admin-section">
+        <h3>Admin: Add New Plot</h3>
+        <input type="password" id="adminPass" placeholder="Enter Admin Password">
+        <button onclick="checkAdmin()">Login</button>
+
+        <div id="addPlotSection" style="display: none;">
+            <input type="text" id="location" placeholder="Location">
+            <input type="text" id="price" placeholder="Price">
+            <input type="text" id="size" placeholder="Size">
+            <input type="text" id="description" placeholder="Description">
+            <input type="file" id="imageUpload">
+            <button onclick="addPlot()">Add Plot</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <p>Phone: <a href="tel:8754741379">8754741379</a></p>
+        <p>Instagram: <a href="#" target="_blank">Visit Instagram</a></p>
+        <p>WhatsApp: <a href="https://wa.me/8754741379" target="_blank">Chat on WhatsApp</a></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
